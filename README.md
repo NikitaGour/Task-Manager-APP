@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+📝 Task Manager App – React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean and modern Task Manager App built with React that includes:
 
-## Available Scripts
+Add, delete, and complete tasks
 
-In the project directory, you can run:
+Filter by All / Pending / Completed
 
-### `npm start`
+Persistent storage using LocalStorage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Custom Hook (useLocalStorage)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Context API for global state
 
-### `npm test`
+Dark/Light theme toggle
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Performance optimized using useCallback, useMemo, React.memo
 
-### `npm run build`
+Fully responsive UI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🚀 Features
+✔ Basic Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add new tasks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Mark tasks as completed
 
-### `npm run eject`
+Delete tasks
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Filter tasks
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Automatically saves data in localStorage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+✔ Advanced React Concepts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+useLocalStorage custom hook
 
-## Learn More
+React Context API for managing all task operations
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React.memo, useCallback, useMemo for optimization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Validation: prevents adding empty tasks
 
-### Code Splitting
+✔ UI Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Light / Dark mode
 
-### Analyzing the Bundle Size
+Responsive on all screen sizes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clean, modern, and minimal design
 
-### Making a Progressive Web App
+📂 Project Structure
+src/
+│── App.js
+│── App.css
+│── main.jsx / index.js
+│── components/ (if added later)
+│── hooks/ (if you expand project)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🛠️ Technologies Used
 
-### Advanced Configuration
+React (JavaScript)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+CSS (custom styling)
 
-### Deployment
+LocalStorage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Context API
 
-### `npm run build` fails to minify
+(Optional) Vite/CRA depending on your setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🧩 How to Run the Project
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Start the development server
+
+If using Vite:
+
+npm run dev
+
+
+If using Create React App:
+
+npm start
+
+3️⃣ Open in browser
+http://localhost:3000/   (CRA)
+http://localhost:5173/   (Vite)
+
+🧠 Key Learnings (For Interview / Assignment)
+
+This project demonstrates:
+
+State management using React Context
+
+Custom hooks
+
+Controlled forms
+
+Dark/Light theming using CSS variables
+
+Persistent data storage (localStorage)
+
+Performance tuning in React
+
+Clean and modular component structure
+
+You can confidently share this in interviews or assignments.
+
+📸 Screenshots (Optional)
+
+
+<img width="1251" height="538" alt="image" src="https://github.com/user-attachments/assets/b855ebfe-edb6-4c0a-9dd4-4ddb52840d26" />
+<img width="1351" height="491" alt="image" src="https://github.com/user-attachments/assets/40db088d-f212-438a-abee-284c56174c6a" />
+
