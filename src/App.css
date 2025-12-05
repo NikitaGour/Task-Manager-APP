@@ -1,113 +1,49 @@
-/* App.css - simple, clean styling */
 
+/* App.css */
 :root{
-  --bg: #f4f4f4;
-  --card: #fff;
-  --text: #222;
-  --muted: #666;
-  --accent: #007bff;
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #666666;
+  --accent: #2563eb;
   --danger: #dc3545;
 }
 
-.page {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-}
+.page{ background: var(--bg); color: var(--text); min-height: 100vh; padding: 24px 0; }
+.page.dark{ --bg: #0b1220; --card: #0f1724; --text: #e6eef8; --muted: #9aa4b2; }
 
-.page.dark {
-  --bg: #0b1220;
-  --card: #0f1724;
-  --text: #e6eef8;
-  --muted: #9aa7bd;
-  --accent: #60a5fa;
-  --danger: #f87171;
-}
+.container{ width: 100%; max-width: 720px; padding: 20px; margin: 0 auto; }
+.app-header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.app-header h1{ margin:0; font-size:1.5rem; }
+.header-controls{ display:flex; gap:12px; align-items:center; }
+.small{ font-size:13px; }
+.muted{ color: var(--muted); }
 
-.container {
-  width: 100%;
-  max-width: 720px;
-}
+.card{ background: var(--card); padding:16px; border-radius:8px; box-shadow: 0 6px 18px rgba(16,24,40,0.06); }
+.form-row{ display:flex; gap:8px; align-items:center; }
+.task-input{ flex:1; padding:10px 12px; border-radius:6px; border:1px solid #e5e7eb; font-size:14px; }
+.add-btn{ background: var(--accent); color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; }
+.add-btn.secondary{ background:#6b7280; }
 
-h1 { margin: 0 0 12px 0; font-size: 20px; }
+.error{ color: var(--danger); margin-bottom:10px; }
 
-.card {
-  background: var(--card);
-  padding: 16px;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-}
+.filters-row{ display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:12px; }
+.filters{ display:inline-flex; gap:8px; }
+.filter{ background:transparent; border:1px solid transparent; padding:6px 10px; border-radius:6px; cursor:pointer; }
+.filter.active{ background:#eef2ff; border-color: #e0e7ff; }
 
-/* form row */
-.form-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 12px;
-}
+.list-meta{ margin-top:12px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.task-list{ margin-top:12px; }
+.no-tasks{ padding:12px; text-align:center; }
 
-input[type="text"], input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  font-size: 14px;
-  background: transparent;
-  color: inherit;
-}
 
-.add-btn {
-  padding: 10px 14px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+.task{ display:flex; justify-content:space-between; align-items:center; padding:10px; border-radius:6px; border:1px solid rgba(15,23,42,0.04); margin-bottom:8px; }
+.task-left{ display:flex; align-items:center; gap:10px; }
+.task.completed .title{ text-decoration:line-through; opacity:0.6; }
+.title{ font-size:14px; }
+.delete-btn{ background:transparent; border:1px solid rgba(0,0,0,0.06); padding:6px 10px; border-radius:6px; cursor:pointer; }
 
-/* filters */
-.filters {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-.filter {
-  padding: 8px 10px;
-  border-radius: 8px;
-  border: none;
-  background: #e9e9e9;
-  cursor: pointer;
-}
-.filter.active {
-  background: var(--accent);
-  color: white;
-}
+.theme-toggle input{ width:16px; height:16px; }
 
-/* tasks */
-.task-list { display:flex; flex-direction:column; gap:8px; }
-.task {
-  display:flex; align-items:center; justify-content:space-between;
-  padding: 10px; border-radius:8px; border: 1px solid #e6e6e6; background: #fafafa;
-}
-.task .left { display:flex; align-items:center; gap:10px; }
-.task.completed .title { text-decoration: line-through; opacity: 0.6; }
-
-.delete-btn {
-  background: var(--danger);
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.page.dark .task .title {
-  color: black; 
-}
-/* responsive */
-@media(min-width:900px){
-  .container { max-width: 720px; }
-}
+/* small responsive tweaks */
+@media (max-width:520px){ .container{ padding:12px; } .app-header h1{ font-size:1.25rem; } }
